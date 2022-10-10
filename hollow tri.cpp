@@ -2,31 +2,31 @@
 using namespace std;
 int main()
 {
-    int h,i,j,k;
-    cout << "Enter the height of the triangle : ";
-	cin >> h;
-    for (i=1;i<=h;i++)
+    int n,i,j,k;
+    cout << "enter the n value";
+	cin >> n;
+    for (i=1;i<=n;i++)
     {
-        for (j=1;j<=(h-i);j++)
+        for (j=1;j<=(n-i);j++)
         {
-            cout << " ";
+            cout <<" ";
         }
-        for (k=1; k <= i * 2 - 1; k++)
+        for (k=1;k<=i*2-1;k++)
         {
-            if (k == 1 || k == i * 2 - 1)
+            if (k==1||k==i*2-1)
             {
-                cout << "*";
+                cout <<"*";
             }
-            else if (i == h)
+            else if(i==n)
             {
-                cout << "*";
+                cout<<"*";
             }
             else
             {
-                cout << " ";
+                cout<<" ";
         }
         }
-        cout << endl;
+        cout<<endl;
     }
     return 0;
 }

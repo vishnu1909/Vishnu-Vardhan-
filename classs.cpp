@@ -3,14 +3,14 @@ class base
 {
 	public:
 		a(){
-			std::cout<<"a";
+			cout<<"a";
 		}
 };
 class base2
 {
 	public:
 		d(){
-			std::cout<<"d";
+			cout<<"d";
 		}
 };
 class Derived:public base,public base2
@@ -18,7 +18,7 @@ class Derived:public base,public base2
 	public:
 	b()
 	{
-		std::cout<<"b";
+		cout<<"b";
 	}
 };
 int main()
